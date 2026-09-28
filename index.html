@@ -1,634 +1,106 @@
 <!doctype html>
 <!--
   ============================================================
-  EL CASTILLO DEL POLLO — SITIO WEB
- =====================================
+  EL CASTILLO DEL POLLO — TRÁILER + CASTING
+  Configuración (ver LEEME.txt):
+  1. TRÁILER: pega el link de YouTube en data-youtube="..."  (busca: CONFIGURAR TRÁILER)
+  2. FORMULARIO: pega el ID de Fillout en data-fillout-id="..." (busca: CONFIGURAR FILLOUT)
+  3. LOGO RED BULL: guárdalo como imagenes/logo-redbull.png
+  ============================================================
 -->
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>El Castillo del Pollo — El reality</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Castillo del Pollo — Tráiler y casting</title>
+<link rel="icon" href="imagenes/cursor-corona.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Grenze+Gotisch:wght@600;800&family=Archivo:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-<!-- ####################  VERSIÓN ESCRITORIO  #################### -->
-<div class="v-desk">
 
-<div style="width: 100%; min-width: 1280px; min-height: 100vh; display: flex; flex-direction: column; background: #F6EFDF; color: #13205B; font-family: 'Archivo', 'Helvetica Neue', sans-serif; overflow: hidden">
-
-<!-- NAV -->
-<header style="height: 96px; flex-shrink: 0; box-sizing: border-box; padding: 0 80px; display: flex; align-items: center; justify-content: space-between; background: #13205B; border-bottom: 4px solid #C8232A">
-<a href="#inicio" style="display: flex; align-items: center; gap: 14px; text-decoration: none">
-<img src="imagenes/logo-horizontal.png" alt="El Castillo del Pollo" style="width: 158px; height: 72px; object-fit: contain">
-</a>
-<nav style="display: flex; align-items: center; gap: 36px; font-weight: 600; font-size: 16px; letter-spacing: 1.5px">
-<a href="#show" style="color: #FFFFFF; text-decoration: none">EL SHOW</a>
-<a href="#juegos" style="color: #FFFFFF; text-decoration: none">LOS JUEGOS</a>
-<a href="#rey" style="color: #FFFFFF; text-decoration: none">EL REY</a>
-<a href="#cameos" style="color: #FFFFFF; text-decoration: none">INVITADOS</a>
-<a href="#casting" style="color: #FFFFFF; text-decoration: none">CASTING</a>
-<a href="#inicio" style="display: flex; align-items: center; gap: 10px; height: 48px; padding: 0 24px; background: #C8232A; color: #FFFFFF; text-decoration: none; border-radius: 4px; font-weight: 700">
-<svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="#FFFFFF"></path></svg>VER TRÁILER</a>
-</nav>
+<!-- ===== MENÚ SUPERIOR ===== -->
+<header class="top">
+  <a href="#inicio" class="top-logo"><img src="imagenes/logo-horizontal.png" alt="El Castillo del Pollo"></a>
+  <nav class="top-nav">
+    <a href="#trailer" class="link">TRÁILER</a>
+    <a href="#casting" class="btn btn-red">POSTULA AL CASTING</a>
+  </nav>
 </header>
 
-<!-- ===== PORTADA · versión ESCRITORIO ===== -->
-<section id="inicio" style="min-height: 800px; flex-shrink: 0; position: relative; box-sizing: border-box; padding: 60px 80px 0; display: flex; align-items: center; gap: 48px; background: #13205B; color: #FFFFFF">
-<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 26px; max-width: 720px; margin-top: -40px">
-<div style="display: flex; align-items: center; gap: 14px">
-<svg width="16" height="16" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 34px; color: #F4C21C; line-height: 1">El nuevo game show</span>
-</div>
-<h1 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 104px; line-height: 0.88; letter-spacing: 1px; text-transform: uppercase">¿Quién se<br>quedará con<br>el <span style="color: #F4C21C">castillo</span>?</h1>
-<p style="margin: 0; font-size: 21px; line-height: 1.55; color: #DCE1F2; max-width: 580px">Equipos que compiten en un castillo, bajo las leyes de un rey. Pruebas tan ridículas como épicas, cameos inesperados y un festín al final de cada jornada.</p>
-<div style="display: flex; gap: 16px; margin-top: 6px">
-<a href="#inicio" style="display: flex; align-items: center; gap: 12px; height: 60px; padding: 0 34px; background: #F4C21C; color: #13205B; font-weight: 700; font-size: 17px; letter-spacing: 1.5px; text-decoration: none; border-radius: 4px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="#13205B"></path></svg>VER TRÁILER</a>
-<a href="#casting" style="display: flex; align-items: center; height: 60px; padding: 0 34px; border: 2px solid #FFFFFF; color: #FFFFFF; font-weight: 700; font-size: 17px; letter-spacing: 1.5px; text-decoration: none; border-radius: 4px">POSTULA AL CASTING</a>
-</div>
-<div style="display: flex; gap: 40px; margin-top: 10px; padding-top: 22px; border-top: 1px solid #3A4A8C">
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">ESTRENO</span><span style="font-size: 19px; font-weight: 600">[FECHA]</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">DÓNDE VERLO</span><span style="font-size: 19px; font-weight: 600">[CANAL / PLATAFORMA]</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">HORARIO</span><span style="font-size: 19px; font-weight: 600">[DÍAS Y HORA]</span></div>
-</div>
-</div>
-<div style="flex-shrink: 0; width: 580px; display: flex; justify-content: center; margin-top: -40px">
-<img src="imagenes/escudo.png" class="hero-logo" alt="Escudo de El Castillo del Pollo" style="width: 540px; height: 545px; object-fit: contain">
-</div>
-<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 36px; display: flex; justify-content: space-between">
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-<div style="width: 44px; height: 36px; background: #C8232A"></div>
-
-</div>
+<!-- ===== PORTADA ===== -->
+<section id="inicio" class="hero">
+  <div class="hero-text">
+    <p class="kicker gold"><svg width="16" height="16" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>El nuevo game show</p>
+    <h1>¿Quién se<br>quedará con<br>el <span class="gold">castillo</span>?</h1>
+    <p class="lead">Equipos que compiten en un castillo, bajo las leyes de un rey. Pruebas tan ridículas como épicas, cameos inesperados y un festín al final de cada jornada.</p>
+    <div class="actions">
+      <a href="#trailer" class="btn btn-gold"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="#13205B"></path></svg>VER TRÁILER</a>
+      <a href="#casting" class="btn btn-outline">POSTULA AL CASTING</a>
+    </div>
+  </div>
+  <img class="hero-logo" src="imagenes/escudo.png" alt="Escudo de El Castillo del Pollo">
+  <div class="merlons" aria-hidden="true"></div>
 </section>
 
-<!-- BAND -->
-<div class="band" style="height: 76px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; gap: 28px; background: #C8232A; color: #FFFFFF; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 800; font-size: 26px; letter-spacing: 3px"><div class="band-track">
-
-<div style="display: flex; align-items: center; gap: 28px">
-<span>PRUEBAS RIDÍCULAS</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
+<!-- ===== FRANJA ANIMADA ===== -->
+<div class="band" aria-hidden="true">
+  <div class="band-track"><span>PRUEBAS RIDÍCULAS</span><i></i><span>PLOT TWISTS</span><i></i><span>INMUNIDAD</span><i></i><span>CAMEOS</span><i></i><span>FESTÍN A LA CHILENA</span><i></i></div>
+  <div class="band-track"><span>PRUEBAS RIDÍCULAS</span><i></i><span>PLOT TWISTS</span><i></i><span>INMUNIDAD</span><i></i><span>CAMEOS</span><i></i><span>FESTÍN A LA CHILENA</span><i></i></div>
 </div>
 
-<div style="display: flex; align-items: center; gap: 28px">
-<span>PLOT TWISTS</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-</div>
-
-<div style="display: flex; align-items: center; gap: 28px">
-<span>INMUNIDAD</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-</div>
-
-<div style="display: flex; align-items: center; gap: 28px">
-<span>CAMEOS</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-</div>
-
-<div style="display: flex; align-items: center; gap: 28px">
-<span>FESTÍN A LA CHILENA</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-</div>
-
-</div><div class="band-track" aria-hidden="true">
-
-<div style="display: flex; align-items: center; gap: 28px">
-<span>PRUEBAS RIDÍCULAS</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-</div>
-
-<div style="display: flex; align-items: center; gap: 28px">
-<span>PLOT TWISTS</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-</div>
-
-<div style="display: flex; align-items: center; gap: 28px">
-<span>INMUNIDAD</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-</div>
-
-<div style="display: flex; align-items: center; gap: 28px">
-<span>CAMEOS</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-</div>
-
-<div style="display: flex; align-items: center; gap: 28px">
-<span>FESTÍN A LA CHILENA</span>
-<svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-</div>
-
-</div></div>
-
-<!-- ===== EL SHOW · versión ESCRITORIO ===== -->
-<section id="show" style="min-height: 760px; flex-shrink: 0; box-sizing: border-box; padding: 110px 80px; display: flex; align-items: center; gap: 88px">
-<div style="flex-shrink: 0; width: 620px; height: 540px; position: relative">
-<div style="position: absolute; left: 24px; top: 24px; width: 596px; height: 516px; background: #C8232A; border-radius: 6px"></div>
-<img src="imagenes/castillo.png" alt="El castillo del reality, con el trono, estandartes y puestos de feria al atardecer" style="position: absolute; left: 0; top: 0; width: 596px; height: 516px; object-fit: cover; border: 4px solid #13205B; border-radius: 6px; box-sizing: border-box">
-</div>
-<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 26px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 32px; color: #B01F25">El Show</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 76px; line-height: 0.92; text-transform: uppercase; color: #13205B">Un castillo.<br>Un rey.<br>Una sola corona.</h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #2E3A6B; max-width: 560px">Un game show de Red Bull grabado en 4 días dentro de un castillo. Los equipos conviven, compiten en pruebas ridículas y enfrentan giros que nadie ve venir. El último en pie se queda con el castillo.</p>
-<div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; margin-top: 12px">
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 3px solid #13205B">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#B01F25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21V9l3-2v-4h3v2h6V3h3v4l3 2v12z"></path><path d="M10 21v-5h4v5"></path></svg>
-<span style="font-weight: 700; font-size: 18px">Pruebas ridículas</span>
-<span style="font-size: 15px; line-height: 1.5; color: #4A5580">Desafíos tan absurdos como decisivos.</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 3px solid #13205B">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#B01F25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.5 17.5L3 6V3h3l11.5 11.5"></path><path d="M13 19l6-6"></path><path d="M16 16l4 4"></path><path d="M19 21l2-2"></path></svg>
-<span style="font-weight: 700; font-size: 18px">Plot twists</span>
-<span style="font-size: 15px; line-height: 1.5; color: #4A5580">Giros sin aviso: nadie se acomoda.</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 18px; border-top: 3px solid #13205B">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#B01F25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 18h18"></path><path d="M3 18l2-10 4 4 3-6 3 6 4-4 2 10"></path></svg>
-<span style="font-weight: 700; font-size: 18px">Una corona</span>
-<span style="font-size: 15px; line-height: 1.5; color: #4A5580">Premio final: [PREMIO].</span>
-</div>
-</div>
-</div>
+<!-- ===== TRÁILER ===== -->
+<section id="trailer" class="trailer">
+  <div class="head center reveal">
+    <p class="kicker gold">El tráiler</p>
+    <h2>Las puertas del castillo se abren</h2>
+  </div>
+  <!-- CONFIGURAR TRÁILER: pega el link de YouTube entre las comillas de data-youtube
+       (ej: data-youtube="https://www.youtube.com/watch?v=XXXXXXXXXXX") -->
+  <div class="video reveal" data-youtube="">
+    <div class="video-placeholder">
+      <span class="play"><svg width="34" height="34" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="#13205B"></path></svg></span>
+      <span class="soon">TRÁILER PRÓXIMAMENTE</span>
+    </div>
+  </div>
+  <p class="meta reveal">Estreno <b>[FECHA]</b> · <b>[CANAL / PLATAFORMA]</b></p>
 </section>
 
-<!-- ===== LOS JUEGOS Y DINÁMICAS · versión ESCRITORIO ===== -->
-<section id="juegos" style="flex-shrink: 0; box-sizing: border-box; padding: 110px 80px; display: flex; flex-direction: column; gap: 56px; background: #0C1540; color: #FFFFFF">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 900px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 32px; color: #F4C21C; line-height: 1">Los juegos</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 92px; line-height: 0.9; text-transform: uppercase; color: #FFFFFF">Pruebas épicas<br>y ridículas</h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #C9D0EA">Cuatro días de rodaje, con desafíos pensados para montarse y grabarse a tiempo. Todos abiertos a co-desarrollarse con el equipo de Pollo Castillo y Red Bull.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px">
-<article style="display: flex; flex-direction: column; gap: 16px; padding: 40px; background: #F6EFDF; color: #13205B; border-radius: 6px">
-<span style="align-self: flex-start; font-size: 14px; font-weight: 700; letter-spacing: 2px; padding: 6px 12px; background: #C8232A; color: #FFFFFF; border-radius: 3px">JUEGO A</span>
-<h3 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 56px; line-height: 0.95; text-transform: uppercase">La volaíta del pollo</h3>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3A4675">Un participante se pone el traje de pollo y sale disparado hacia el lago o la piscina. Mientras vuela, el equipo rival lo espera armado con pintura, listo para dejarlo hecho un cuadro abstracto antes de que toque el agua. Todo en cámara lenta.</p>
-</article>
-<article style="display: flex; flex-direction: column; gap: 16px; padding: 40px; background: #F6EFDF; color: #13205B; border-radius: 6px">
-<span style="align-self: flex-start; font-size: 14px; font-weight: 700; letter-spacing: 2px; padding: 6px 12px; background: #C8232A; color: #FFFFFF; border-radius: 3px">JUEGO B</span>
-<h3 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 56px; line-height: 0.95; text-transform: uppercase">[NOMBRE DEL JUEGO B]</h3>
-<p style="margin: 0; font-size: 18px; line-height: 1.6; color: #3A4675">[DESCRIPCIÓN DEL JUEGO B]</p>
-</article>
-</div>
-<div style="display: flex; flex-direction: column; gap: 28px; margin-top: 8px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 32px; color: #F4C21C; line-height: 1">Dinámicas de convivencia</span>
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px">
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #F4C21C">
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 34px; color: #F4C21C; line-height: 1">I</span>
-<span style="font-weight: 700; font-size: 20px; color: #FFFFFF">Plot twists sin aviso</span>
-<span style="font-size: 16px; line-height: 1.55; color: #C9D0EA">Giros que se activan en modo sorpresa, para que nadie (ni los participantes ni la audiencia) se acomode.</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #F4C21C">
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 34px; color: #F4C21C; line-height: 1">II</span>
-<span style="font-weight: 700; font-size: 20px; color: #FFFFFF">Sacrificio grupal</span>
-<span style="font-size: 16px; line-height: 1.55; color: #C9D0EA">El equipo decide quién se queda afuera para que el resto avance.</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #F4C21C">
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 34px; color: #F4C21C; line-height: 1">III</span>
-<span style="font-weight: 700; font-size: 20px; color: #FFFFFF">La prueba de la suerte</span>
-<span style="font-size: 16px; line-height: 1.55; color: #C9D0EA">Con Mercado Libre como sponsor: el azar reparte ventajas o desastres sin pedir permiso.</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #F4C21C">
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 34px; color: #F4C21C; line-height: 1">IV</span>
-<span style="font-weight: 700; font-size: 20px; color: #FFFFFF">Inmunidad absurda</span>
-<span style="font-size: 16px; line-height: 1.55; color: #C9D0EA">Una dinámica tan ridícula como decisiva. En este reino, hasta salvarse tiene que dar risa.</span>
-</div>
-</div>
-</div>
+<!-- ===== CASTING (FORMULARIO FILLOUT) ===== -->
+<section id="casting" class="casting">
+  <div class="head center reveal">
+    <p class="kicker gold">Casting abierto</p>
+    <h2>¿Tienes lo que se necesita para reinar?</h2>
+    <p class="lead">Buscamos estrategas, guerreros y personajes inolvidables. Postula antes del [FECHA DE CIERRE].</p>
+  </div>
+  <div class="form-card reveal">
+    <!-- CONFIGURAR FILLOUT: pega el ID de tu formulario entre las comillas de data-fillout-id.
+         El ID es la parte final del link del formulario: forms.fillout.com/t/ESTE-ES-EL-ID -->
+    <div class="fillout" data-fillout-id="" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div>
+    <div class="form-placeholder">
+      <p class="ph-title">Postula al castillo</p>
+      <p>El formulario de casting aparecerá aquí.</p>
+    </div>
+  </div>
 </section>
 
-<!-- ===== EL REY · versión ESCRITORIO ===== -->
-<section id="rey" style="min-height: 800px; flex-shrink: 0; box-sizing: border-box; padding: 100px 80px; display: flex; align-items: center; gap: 64px">
-<div style="flex-shrink: 0; width: 640px; display: flex; justify-content: center">
-<img src="imagenes/rey.png" alt="Ilustración del rey del castillo" style="width: 640px; height: 546px; object-fit: contain">
-</div>
-<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 26px; max-width: 600px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 32px; color: #B01F25">El Rey</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 88px; line-height: 0.9; text-transform: uppercase; color: #13205B">Su palabra<br>es ley</h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #2E3A6B">[NOMBRE DEL CONDUCTOR] gobierna el castillo desde el trono: presenta las pruebas, activa los giros y decide quién cruza el puente levadizo.</p>
-<a href="#inicio" style="align-self: flex-start; display: flex; align-items: center; gap: 12px; height: 60px; padding: 0 34px; margin-top: 8px; background: #C8232A; color: #FFFFFF; font-weight: 700; font-size: 17px; letter-spacing: 1.5px; text-decoration: none; border-radius: 4px">
-<svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
-<path d="M6 3l15 9-15 9z" fill="#FFFFFF">
-</path>
-</svg>CONOCE AL REY</a>
-</div>
-</section>
-
-<!-- ===== INVITADOS (CAMEOS) · versión ESCRITORIO ===== -->
-<section id="cameos" style="flex-shrink: 0; box-sizing: border-box; padding: 110px 80px; display: flex; flex-direction: column; gap: 48px; background: #13205B; color: #FFFFFF">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 900px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 32px; color: #F4C21C; line-height: 1">Invitados de la corte</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 92px; line-height: 0.9; text-transform: uppercase; color: #FFFFFF">Los pollos más<br>queridos de Chile</h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #DCE1F2">El reino no se conquista solo. Aparecen como jueces invitados, personajes especiales o simplemente para dejar el caos en el momento justo. Cada cameo suma su propio fandom y su propio meme.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 24px">
-<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 36px 16px; background: #1C2C72; border: 2px solid #3A4A8C; border-radius: 6px; text-align: center">
-<div style="width: 84px; height: 84px; display: flex; align-items: center; justify-content: center; background: #0C1540; border: 2px solid #F4C21C; border-radius: 50%">
-<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F4C21C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M3 18h18">
-</path>
-<path d="M3 18l2-10 4 4 3-6 3 6 4-4 2 10">
-</path>
-</svg>
-</div>
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 34px; line-height: 1; text-transform: uppercase; color: #FFFFFF">Pollo Fuentes</span>
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">CAMEO</span>
-</div>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 36px 16px; background: #1C2C72; border: 2px solid #3A4A8C; border-radius: 6px; text-align: center">
-<div style="width: 84px; height: 84px; display: flex; align-items: center; justify-content: center; background: #0C1540; border: 2px solid #F4C21C; border-radius: 50%">
-<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F4C21C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M3 18h18">
-</path>
-<path d="M3 18l2-10 4 4 3-6 3 6 4-4 2 10">
-</path>
-</svg>
-</div>
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 34px; line-height: 1; text-transform: uppercase; color: #FFFFFF">Pollo Valdivia</span>
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">CAMEO</span>
-</div>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 36px 16px; background: #1C2C72; border: 2px solid #3A4A8C; border-radius: 6px; text-align: center">
-<div style="width: 84px; height: 84px; display: flex; align-items: center; justify-content: center; background: #0C1540; border: 2px solid #F4C21C; border-radius: 50%">
-<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F4C21C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M3 18h18">
-</path>
-<path d="M3 18l2-10 4 4 3-6 3 6 4-4 2 10">
-</path>
-</svg>
-</div>
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 34px; line-height: 1; text-transform: uppercase; color: #FFFFFF">Guru Guru</span>
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">CAMEO</span>
-</div>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 36px 16px; background: #1C2C72; border: 2px solid #3A4A8C; border-radius: 6px; text-align: center">
-<div style="width: 84px; height: 84px; display: flex; align-items: center; justify-content: center; background: #0C1540; border: 2px solid #F4C21C; border-radius: 50%">
-<svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F4C21C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M3 18h18">
-</path>
-<path d="M3 18l2-10 4 4 3-6 3 6 4-4 2 10">
-</path>
-</svg>
-</div>
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 34px; line-height: 1; text-transform: uppercase; color: #FFFFFF">El Gallina</span>
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">CAMEO</span>
-</div>
-</div>
-</section>
-
-<!-- ===== FESTÍN A LA CHILENA · versión ESCRITORIO ===== -->
-<section id="festin" style="flex-shrink: 0; box-sizing: border-box; padding: 110px 80px; display: flex; flex-direction: row; align-items: center; gap: 88px">
-<div style="flex: 1; display: flex; flex-direction: column; gap: 22px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 32px; color: #B01F25; line-height: 1">El after</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 92px; line-height: 0.9; text-transform: uppercase; color: #13205B">Un festín<br>a la chilena</h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #2E3A6B">Después de las pruebas viene el after: una porotada humeante y completos para todos, como la previa de un asado familiar.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<span style="display: inline-flex; align-items: center; height: 52px; padding: 0 24px; background: #13205B; color: #F4C21C; font-weight: 700; font-size: 17px; letter-spacing: 1.5px; border-radius: 4px">POROTADA HUMEANTE</span>
-<span style="display: inline-flex; align-items: center; height: 52px; padding: 0 24px; background: #13205B; color: #F4C21C; font-weight: 700; font-size: 17px; letter-spacing: 1.5px; border-radius: 4px">COMPLETOS PARA TODOS</span>
-</div>
-</div>
-<blockquote style="margin: 0; flex: 1; padding: 48px; background: #C8232A; color: #FFFFFF; border-radius: 6px; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 58px; line-height: 0.98; text-transform: uppercase">Nadie se va del castillo sin la panza llena, ganador o no.</blockquote>
-</section>
-
-<!-- ===== CASTING · versión ESCRITORIO ===== -->
-<section id="casting" style="min-height: 860px; flex-shrink: 0; box-sizing: border-box; padding: 100px 80px; display: flex; gap: 48px; background: #C8232A; color: #FFFFFF">
-<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 28px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 32px; color: #F4C21C">Casting abierto</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 88px; line-height: 0.9; text-transform: uppercase">¿Tienes lo que<br>se necesita para<br>reinar?</h2>
-<p style="margin: 0; font-size: 19px; line-height: 1.6; color: #FFFFFF; max-width: 540px">Buscamos estrategas, guerreros y personajes inolvidables. Postula antes del [FECHA DE CIERRE].</p>
-<div style="display: flex; flex-direction: column; gap: 8px; margin-top: 8px"><span style="font-size: 14px; font-weight: 700; letter-spacing: 2px; color: #FFEBB8">SÍGUENOS</span><span style="font-size: 20px; font-weight: 600">[@USUARIO]</span></div>
-</div>
-<form class="casting-form" name="casting" style="flex-shrink: 0; width: 560px; box-sizing: border-box; padding: 40px; display: flex; flex-direction: column; gap: 18px; background: #F6EFDF; color: #13205B; border-radius: 6px; border: 4px solid #13205B">
-<p hidden><label>No llenar <input name="bot-field"></label></p>
-<h3 style="margin: 0 0 4px; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 44px; line-height: 1; text-transform: uppercase">Postula al castillo</h3>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700; letter-spacing: 1px">NOMBRE<input name="nombre" required type="text" placeholder="Tu nombre completo" style="height: 50px; padding: 0 16px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 17px; font-family: inherit; color: #13205B"></label>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700; letter-spacing: 1px">EDAD<input name="edad" required type="number" min="18" placeholder="18+" style="height: 50px; padding: 0 16px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 17px; font-family: inherit; color: #13205B"></label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700; letter-spacing: 1px">CIUDAD<input name="ciudad" required type="text" placeholder="Tu ciudad" style="height: 50px; padding: 0 16px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 17px; font-family: inherit; color: #13205B"></label>
-</div>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700; letter-spacing: 1px">INSTAGRAM O TIKTOK<input name="redes" required type="text" placeholder="@tuusuario" style="height: 50px; padding: 0 16px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 17px; font-family: inherit; color: #13205B"></label>
-<label style="display: flex; flex-direction: column; gap: 8px; font-size: 14px; font-weight: 700; letter-spacing: 1px">¿POR QUÉ MERECES LA CORONA?<textarea name="motivo" required rows="3" placeholder="Convence al rey…" style="padding: 12px 16px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 17px; font-family: inherit; color: #13205B; resize: none">
-</textarea>
-</label>
-<button type="submit" style="height: 60px; margin-top: 4px; border: none; border-radius: 4px; background: #13205B; color: #F4C21C; font-family: inherit; font-weight: 700; font-size: 17px; letter-spacing: 2px; cursor: pointer">ENVIAR POSTULACIÓN</button>
-<p class="form-msg" role="status" hidden style="margin: 0; padding: 14px 16px; border-radius: 4px; background: #13205B; color: #F4C21C; font-weight: 700"></p>
-</form>
-</section>
-
-<!-- FOOTER -->
-<!-- ===== PIE DE PÁGINA · versión ESCRITORIO ===== -->
-<footer style="flex-grow: 1; min-height: 260px; box-sizing: border-box; padding: 56px 80px 36px; display: flex; flex-direction: column; gap: 36px; background: #0C1540; color: #C9D0EA">
-<div style="display: flex; align-items: center; justify-content: space-between; gap: 40px">
-<div style="display: flex; align-items: center; gap: 24px">
-<img src="imagenes/escudo.png" alt="El Castillo del Pollo" style="width: 150px; height: 152px; object-fit: contain">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 32px; color: #F4C21C">Larga vida al rey</span>
-</div>
-<!-- Logos de producción y auspicio. Para el de Red Bull: guardar el logo oficial (PNG, versión clara para fondo oscuro) como imagenes/logo-redbull.png -->
-<div style="display: flex; align-items: center; gap: 28px">
-<img src="imagenes/logo-cooking.png" alt="Cooking Media" style="height: 40px; width: auto">
-<span style="width: 1px; height: 40px; background: #3A4A8C"></span>
-<img src="imagenes/logo-redbull.png" alt="Red Bull" style="height: 48px; width: auto" onerror="this.outerHTML='&lt;span style=&quot;display:inline-flex;align-items:center;justify-content:center;height:48px;padding:0 14px;border:2px dashed #6B7AB8;border-radius:4px;color:#C9D0EA;font-size:12px;font-weight:700;letter-spacing:1.5px&quot;&gt;LOGO RED BULL&lt;/span&gt;'">
-</div>
-</div>
-<div style="display: flex; align-items: center; justify-content: space-between; padding-top: 24px; border-top: 1px solid #25336F">
-<nav style="display: flex; gap: 32px; font-size: 15px; font-weight: 600; letter-spacing: 1px">
-<a href="#show" style="color: #FFFFFF; text-decoration: none">EL SHOW</a>
-<a href="#cameos" style="color: #FFFFFF; text-decoration: none">INVITADOS</a>
-<a href="#casting" style="color: #FFFFFF; text-decoration: none">CASTING</a>
-</nav>
-<span style="font-size: 14px">© 2026 El Castillo del Pollo</span>
-</div>
+<!-- ===== PIE DE PÁGINA ===== -->
+<footer class="foot">
+  <div class="foot-row">
+    <div class="foot-brand">
+      <img src="imagenes/escudo.png" alt="El Castillo del Pollo">
+      <span>Larga vida al rey</span>
+    </div>
+    <div class="foot-logos">
+      <img src="imagenes/logo-cooking.png" alt="Cooking Media" class="lg-cooking">
+      <span class="sep"></span>
+      <img src="imagenes/logo-redbull.png" alt="Red Bull" class="lg-redbull" onerror="this.outerHTML='&lt;span class=&quot;lg-ph&quot;&gt;LOGO RED BULL&lt;/span&gt;'">
+    </div>
+  </div>
+  <p class="copy">© 2026 El Castillo del Pollo</p>
 </footer>
 
-</div>
-</div>
-<!-- ####################  VERSIÓN MÓVIL  #################### -->
-<div class="v-mob">
-
-<div style="width: 100%; min-height: 100vh; display: flex; flex-direction: column; background: #F6EFDF; color: #13205B; font-family: 'Archivo', 'Helvetica Neue', sans-serif; overflow: hidden">
-
-<header style="height: 72px; flex-shrink: 0; box-sizing: border-box; padding: 0 20px; display: flex; align-items: center; justify-content: space-between; background: #13205B; border-bottom: 3px solid #C8232A">
-<a href="#m-inicio" style="display: flex; align-items: center; gap: 10px; text-decoration: none">
-<img src="imagenes/logo-horizontal.png" alt="El Castillo del Pollo" style="width: 116px; height: 53px; object-fit: contain">
-</a>
-<button type="button" class="menu-btn" aria-expanded="false" aria-controls="m-nav" aria-label="Abrir menú" style="width: 48px; height: 48px; display: flex; align-items: center; justify-content: center; background: transparent; border: 2px solid #FFFFFF; border-radius: 4px; cursor: pointer">
-<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg>
-</button>
-</header>
-
-<nav id="m-nav" hidden style="background: #13205B; border-bottom: 3px solid #C8232A; padding: 8px 20px 20px; display: flex; flex-direction: column">
-<a href="#m-show" style="color:#FFFFFF;text-decoration:none;font-weight:700;letter-spacing:1.5px;padding:14px 0;border-bottom:1px solid #3A4A8C">EL SHOW</a>
-<a href="#m-juegos" style="color:#FFFFFF;text-decoration:none;font-weight:700;letter-spacing:1.5px;padding:14px 0;border-bottom:1px solid #3A4A8C">LOS JUEGOS</a>
-<a href="#m-rey" style="color:#FFFFFF;text-decoration:none;font-weight:700;letter-spacing:1.5px;padding:14px 0;border-bottom:1px solid #3A4A8C">EL REY</a>
-<a href="#m-cameos" style="color:#FFFFFF;text-decoration:none;font-weight:700;letter-spacing:1.5px;padding:14px 0;border-bottom:1px solid #3A4A8C">INVITADOS</a>
-<a href="#m-casting" style="color:#F4C21C;text-decoration:none;font-weight:700;letter-spacing:1.5px;padding:14px 0">POSTULA AL CASTING</a>
-</nav>
-<!-- ===== PORTADA · versión MÓVIL ===== -->
-<section id="m-inicio" style="flex-shrink: 0; position: relative; box-sizing: border-box; padding: 32px 24px 80px; display: flex; flex-direction: column; align-items: center; gap: 20px; background: #13205B; color: #FFFFFF; text-align: center">
-<img src="imagenes/escudo.png" class="hero-logo" alt="Escudo de El Castillo del Pollo" style="width: 300px; height: 303px; object-fit: contain">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 26px; color: #F4C21C; line-height: 1">El nuevo game show</span>
-<h1 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 58px; line-height: 0.9; text-transform: uppercase">¿Quién se quedará con el <span style="color: #F4C21C">castillo</span>?</h1>
-<p style="margin: 0; font-size: 17px; line-height: 1.55; color: #DCE1F2">Equipos que compiten en un castillo, bajo las leyes de un rey. Pruebas ridículas, cameos y festín.</p>
-<div style="display: flex; flex-direction: column; gap: 12px; width: 100%; margin-top: 4px">
-<a href="#m-inicio" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 56px; background: #F4C21C; color: #13205B; font-weight: 700; font-size: 16px; letter-spacing: 1.5px; text-decoration: none; border-radius: 4px"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="#13205B"></path></svg>VER TRÁILER</a>
-<a href="#m-casting" style="display: flex; align-items: center; justify-content: center; height: 56px; border: 2px solid #FFFFFF; color: #FFFFFF; font-weight: 700; font-size: 16px; letter-spacing: 1.5px; text-decoration: none; border-radius: 4px">POSTULA AL CASTING</a>
-</div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; width: 100%; margin-top: 6px; padding-top: 18px; border-top: 1px solid #3A4A8C; text-align: left">
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">ESTRENO</span><span style="font-size: 16px; font-weight: 600">[FECHA]</span></div>
-<div style="display: flex; flex-direction: column; gap: 4px"><span style="font-size: 12px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">DÓNDE VERLO</span><span style="font-size: 16px; font-weight: 600">[CANAL]</span></div>
-</div>
-<div style="position: absolute; left: 0; right: 0; bottom: 0; height: 24px; display: flex; justify-content: space-between">
-
-<div style="width: 26px; height: 24px; background: #C8232A"></div>
-
-<div style="width: 26px; height: 24px; background: #C8232A"></div>
-
-<div style="width: 26px; height: 24px; background: #C8232A"></div>
-
-<div style="width: 26px; height: 24px; background: #C8232A"></div>
-
-<div style="width: 26px; height: 24px; background: #C8232A"></div>
-
-<div style="width: 26px; height: 24px; background: #C8232A"></div>
-
-<div style="width: 26px; height: 24px; background: #C8232A"></div>
-
-<div style="width: 26px; height: 24px; background: #C8232A"></div>
-
-<div style="width: 26px; height: 24px; background: #C8232A"></div>
-
-</div>
-</section>
-
-<div class="band" style="height: 56px; flex-shrink: 0; display: flex; align-items: center; justify-content: center; gap: 14px; background: #C8232A; color: #FFFFFF; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 800; font-size: 19px; letter-spacing: 2px"><div class="band-track">
-<span>INMUNIDAD</span>
-<svg width="10" height="10" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-<span>CAMEOS</span>
-<svg width="10" height="10" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-<span>FESTÍN</span>
-</div><div class="band-track" aria-hidden="true">
-<span>INMUNIDAD</span>
-<svg width="10" height="10" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-<span>CAMEOS</span>
-<svg width="10" height="10" viewBox="0 0 14 14" aria-hidden="true"><path d="M7 0L14 7L7 14L0 7Z" fill="#F4C21C"></path></svg>
-<span>FESTÍN</span>
-</div></div>
-
-<!-- ===== EL SHOW · versión MÓVIL ===== -->
-<section id="m-show" style="flex-shrink: 0; box-sizing: border-box; padding: 64px 24px; display: flex; flex-direction: column; gap: 22px">
-<div style="position: relative; width: 100%; max-width: 342px; height: 306px">
-<div style="position: absolute; left: 12px; top: 12px; width: 330px; height: 294px; background: #C8232A; border-radius: 6px"></div>
-<img src="imagenes/castillo.png" alt="El castillo del reality, con trono y estandartes" style="position: absolute; left: 0; top: 0; width: 330px; height: 294px; object-fit: cover; border: 3px solid #13205B; border-radius: 6px; box-sizing: border-box">
-</div>
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 26px; color: #B01F25; margin-top: 10px">El Show</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 50px; line-height: 0.92; text-transform: uppercase">Un castillo.<br>Un rey.<br>Una sola corona.</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2E3A6B">Un game show de Red Bull grabado en 4 días dentro de un castillo. El último en pie se queda con el castillo.</p>
-<div style="display: flex; flex-direction: column">
-<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px 0; border-top: 3px solid #13205B"><span style="font-weight: 700; font-size: 17px">Pruebas ridículas</span><span style="font-size: 15px; line-height: 1.5; color: #4A5580">Desafíos tan absurdos como decisivos.</span></div>
-<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px 0; border-top: 3px solid #13205B"><span style="font-weight: 700; font-size: 17px">Plot twists</span><span style="font-size: 15px; line-height: 1.5; color: #4A5580">Giros sin aviso: nadie se acomoda.</span></div>
-<div style="display: flex; flex-direction: column; gap: 6px; padding: 16px 0; border-top: 3px solid #13205B"><span style="font-weight: 700; font-size: 17px">Una corona</span><span style="font-size: 15px; line-height: 1.5; color: #4A5580">Premio final: [PREMIO].</span></div>
-</div>
-</section>
-
-<!-- ===== LOS JUEGOS Y DINÁMICAS · versión MÓVIL ===== -->
-<section id="m-juegos" style="flex-shrink: 0; box-sizing: border-box; padding: 64px 24px; display: flex; flex-direction: column; gap: 40px; background: #0C1540; color: #FFFFFF">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 900px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 26px; color: #F4C21C; line-height: 1">Los juegos</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 54px; line-height: 0.9; text-transform: uppercase; color: #FFFFFF">Pruebas épicas<br>y ridículas</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #C9D0EA">Cuatro días de rodaje, con desafíos pensados para montarse y grabarse a tiempo. Todos abiertos a co-desarrollarse con el equipo de Pollo Castillo y Red Bull.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 18px">
-<article style="display: flex; flex-direction: column; gap: 16px; padding: 26px; background: #F6EFDF; color: #13205B; border-radius: 6px">
-<span style="align-self: flex-start; font-size: 14px; font-weight: 700; letter-spacing: 2px; padding: 6px 12px; background: #C8232A; color: #FFFFFF; border-radius: 3px">JUEGO A</span>
-<h3 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 38px; line-height: 0.95; text-transform: uppercase">La volaíta del pollo</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3A4675">Un participante se pone el traje de pollo y sale disparado hacia el lago o la piscina. Mientras vuela, el equipo rival lo espera armado con pintura, listo para dejarlo hecho un cuadro abstracto antes de que toque el agua. Todo en cámara lenta.</p>
-</article>
-<article style="display: flex; flex-direction: column; gap: 16px; padding: 26px; background: #F6EFDF; color: #13205B; border-radius: 6px">
-<span style="align-self: flex-start; font-size: 14px; font-weight: 700; letter-spacing: 2px; padding: 6px 12px; background: #C8232A; color: #FFFFFF; border-radius: 3px">JUEGO B</span>
-<h3 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 38px; line-height: 0.95; text-transform: uppercase">[NOMBRE DEL JUEGO B]</h3>
-<p style="margin: 0; font-size: 15px; line-height: 1.6; color: #3A4675">[DESCRIPCIÓN DEL JUEGO B]</p>
-</article>
-</div>
-<div style="display: flex; flex-direction: column; gap: 28px; margin-top: 8px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 26px; color: #F4C21C; line-height: 1">Dinámicas de convivencia</span>
-<div style="display: grid; grid-template-columns: repeat(1, minmax(0, 1fr)); gap: 28px">
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #F4C21C">
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 28px; color: #F4C21C; line-height: 1">I</span>
-<span style="font-weight: 700; font-size: 18px; color: #FFFFFF">Plot twists sin aviso</span>
-<span style="font-size: 15px; line-height: 1.55; color: #C9D0EA">Giros que se activan en modo sorpresa, para que nadie (ni los participantes ni la audiencia) se acomode.</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #F4C21C">
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 28px; color: #F4C21C; line-height: 1">II</span>
-<span style="font-weight: 700; font-size: 18px; color: #FFFFFF">Sacrificio grupal</span>
-<span style="font-size: 15px; line-height: 1.55; color: #C9D0EA">El equipo decide quién se queda afuera para que el resto avance.</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #F4C21C">
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 28px; color: #F4C21C; line-height: 1">III</span>
-<span style="font-weight: 700; font-size: 18px; color: #FFFFFF">La prueba de la suerte</span>
-<span style="font-size: 15px; line-height: 1.55; color: #C9D0EA">Con Mercado Libre como sponsor: el azar reparte ventajas o desastres sin pedir permiso.</span>
-</div>
-<div style="display: flex; flex-direction: column; gap: 10px; padding-top: 20px; border-top: 3px solid #F4C21C">
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 28px; color: #F4C21C; line-height: 1">IV</span>
-<span style="font-weight: 700; font-size: 18px; color: #FFFFFF">Inmunidad absurda</span>
-<span style="font-size: 15px; line-height: 1.55; color: #C9D0EA">Una dinámica tan ridícula como decisiva. En este reino, hasta salvarse tiene que dar risa.</span>
-</div>
-</div>
-</div>
-</section>
-
-<!-- ===== EL REY · versión MÓVIL ===== -->
-<section id="m-rey" style="flex-shrink: 0; box-sizing: border-box; padding: 64px 24px; display: flex; flex-direction: column; gap: 20px">
-<img src="imagenes/rey.png" alt="Ilustración del rey del castillo" style="width: 342px; height: 292px; object-fit: contain">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 26px; color: #B01F25; margin-top: 8px">El Rey</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 56px; line-height: 0.9; text-transform: uppercase">Su palabra<br>es ley</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2E3A6B">[NOMBRE DEL CONDUCTOR] gobierna el castillo desde el trono: presenta las pruebas, activa los giros y decide quién cruza el puente levadizo.</p>
-<a href="#m-inicio" style="display: flex; align-items: center; justify-content: center; gap: 10px; height: 56px; background: #C8232A; color: #FFFFFF; font-weight: 700; font-size: 16px; letter-spacing: 1.5px; text-decoration: none; border-radius: 4px"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3l15 9-15 9z" fill="#FFFFFF"></path></svg>CONOCE AL REY</a>
-</section>
-
-<!-- ===== INVITADOS (CAMEOS) · versión MÓVIL ===== -->
-<section id="m-cameos" style="flex-shrink: 0; box-sizing: border-box; padding: 64px 24px; display: flex; flex-direction: column; gap: 36px; background: #13205B; color: #FFFFFF">
-<div style="display: flex; flex-direction: column; gap: 16px; max-width: 900px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 26px; color: #F4C21C; line-height: 1">Invitados de la corte</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 54px; line-height: 0.9; text-transform: uppercase; color: #FFFFFF">Los pollos más<br>queridos de Chile</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #DCE1F2">El reino no se conquista solo. Aparecen como jueces invitados, personajes especiales o simplemente para dejar el caos en el momento justo. Cada cameo suma su propio fandom y su propio meme.</p>
-</div>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px">
-<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 22px 16px; background: #1C2C72; border: 2px solid #3A4A8C; border-radius: 6px; text-align: center">
-<div style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: #0C1540; border: 2px solid #F4C21C; border-radius: 50%">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F4C21C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M3 18h18">
-</path>
-<path d="M3 18l2-10 4 4 3-6 3 6 4-4 2 10">
-</path>
-</svg>
-</div>
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 26px; line-height: 1; text-transform: uppercase; color: #FFFFFF">Pollo Fuentes</span>
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">CAMEO</span>
-</div>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 22px 16px; background: #1C2C72; border: 2px solid #3A4A8C; border-radius: 6px; text-align: center">
-<div style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: #0C1540; border: 2px solid #F4C21C; border-radius: 50%">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F4C21C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M3 18h18">
-</path>
-<path d="M3 18l2-10 4 4 3-6 3 6 4-4 2 10">
-</path>
-</svg>
-</div>
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 26px; line-height: 1; text-transform: uppercase; color: #FFFFFF">Pollo Valdivia</span>
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">CAMEO</span>
-</div>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 22px 16px; background: #1C2C72; border: 2px solid #3A4A8C; border-radius: 6px; text-align: center">
-<div style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: #0C1540; border: 2px solid #F4C21C; border-radius: 50%">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F4C21C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M3 18h18">
-</path>
-<path d="M3 18l2-10 4 4 3-6 3 6 4-4 2 10">
-</path>
-</svg>
-</div>
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 26px; line-height: 1; text-transform: uppercase; color: #FFFFFF">Guru Guru</span>
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">CAMEO</span>
-</div>
-<div style="display: flex; flex-direction: column; align-items: center; gap: 14px; padding: 22px 16px; background: #1C2C72; border: 2px solid #3A4A8C; border-radius: 6px; text-align: center">
-<div style="width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; background: #0C1540; border: 2px solid #F4C21C; border-radius: 50%">
-<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#F4C21C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-<path d="M3 18h18">
-</path>
-<path d="M3 18l2-10 4 4 3-6 3 6 4-4 2 10">
-</path>
-</svg>
-</div>
-<span style="font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 26px; line-height: 1; text-transform: uppercase; color: #FFFFFF">El Gallina</span>
-<span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #F4C21C">CAMEO</span>
-</div>
-</div>
-</section>
-
-<!-- ===== FESTÍN A LA CHILENA · versión MÓVIL ===== -->
-<section id="m-festin" style="flex-shrink: 0; box-sizing: border-box; padding: 64px 24px; display: flex; flex-direction: column; align-items: flex-start; gap: 28px">
-<div style="flex: 1; display: flex; flex-direction: column; gap: 22px">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 26px; color: #B01F25; line-height: 1">El after</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 54px; line-height: 0.9; text-transform: uppercase; color: #13205B">Un festín<br>a la chilena</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6; color: #2E3A6B">Después de las pruebas viene el after: una porotada humeante y completos para todos, como la previa de un asado familiar.</p>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<span style="display: inline-flex; align-items: center; height: 44px; padding: 0 18px; background: #13205B; color: #F4C21C; font-weight: 700; font-size: 15px; letter-spacing: 1.5px; border-radius: 4px">POROTADA HUMEANTE</span>
-<span style="display: inline-flex; align-items: center; height: 44px; padding: 0 18px; background: #13205B; color: #F4C21C; font-weight: 700; font-size: 15px; letter-spacing: 1.5px; border-radius: 4px">COMPLETOS PARA TODOS</span>
-</div>
-</div>
-<blockquote style="margin: 0; flex: 1; padding: 26px; background: #C8232A; color: #FFFFFF; border-radius: 6px; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 34px; line-height: 0.98; text-transform: uppercase">Nadie se va del castillo sin la panza llena, ganador o no.</blockquote>
-</section>
-
-<!-- ===== CASTING · versión MÓVIL ===== -->
-<section id="m-casting" style="flex-shrink: 0; box-sizing: border-box; padding: 64px 24px; display: flex; flex-direction: column; gap: 20px; background: #C8232A; color: #FFFFFF">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 26px; color: #F4C21C">Casting abierto</span>
-<h2 style="margin: 0; font-family: 'Big Shoulders Display', 'Arial Narrow', sans-serif; font-weight: 900; font-size: 50px; line-height: 0.9; text-transform: uppercase">¿Tienes lo que se necesita para reinar?</h2>
-<p style="margin: 0; font-size: 17px; line-height: 1.6">Postula antes del [FECHA DE CIERRE].</p>
-<form class="casting-form" name="casting" style="box-sizing: border-box; padding: 26px 22px; margin-top: 6px; display: flex; flex-direction: column; gap: 16px; background: #F6EFDF; color: #13205B; border-radius: 6px; border: 3px solid #13205B">
-<p hidden><label>No llenar <input name="bot-field"></label></p>
-<h3 style="margin: 0; font-family: 'Big Shoulders Display', sans-serif; font-weight: 900; font-size: 32px; line-height: 1; text-transform: uppercase">Postula al castillo</h3>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; letter-spacing: 1px">NOMBRE<input name="nombre" required type="text" placeholder="Tu nombre completo" style="height: 48px; padding: 0 14px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-family: inherit; color: #13205B"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; letter-spacing: 1px">EDAD<input name="edad" required type="number" min="18" placeholder="18+" style="height: 48px; padding: 0 14px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-family: inherit; color: #13205B"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; letter-spacing: 1px">CIUDAD<input name="ciudad" required type="text" placeholder="Tu ciudad" style="height: 48px; padding: 0 14px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-family: inherit; color: #13205B"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; letter-spacing: 1px">INSTAGRAM O TIKTOK<input name="redes" required type="text" placeholder="@tuusuario" style="height: 48px; padding: 0 14px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-family: inherit; color: #13205B"></label>
-<label style="display: flex; flex-direction: column; gap: 6px; font-size: 13px; font-weight: 700; letter-spacing: 1px">¿POR QUÉ MERECES LA CORONA?<textarea name="motivo" required rows="3" placeholder="Convence al rey…" style="padding: 12px 14px; border: 2px solid #13205B; border-radius: 4px; background: #FFFFFF; font-size: 16px; font-family: inherit; color: #13205B; resize: none">
-</textarea>
-</label>
-<button type="submit" style="height: 56px; margin-top: 4px; border: none; border-radius: 4px; background: #13205B; color: #F4C21C; font-family: inherit; font-weight: 700; font-size: 16px; letter-spacing: 2px; cursor: pointer">ENVIAR POSTULACIÓN</button>
-<p class="form-msg" role="status" hidden style="margin: 0; padding: 14px 16px; border-radius: 4px; background: #13205B; color: #F4C21C; font-weight: 700"></p>
-</form>
-<div style="display: flex; flex-direction: column; gap: 4px; margin-top: 6px"><span style="font-size: 13px; font-weight: 700; letter-spacing: 2px; color: #FFEBB8">SÍGUENOS</span><span style="font-size: 18px; font-weight: 600">[@USUARIO]</span></div>
-</section>
-
-<!-- ===== PIE DE PÁGINA · versión MÓVIL ===== -->
-<footer style="flex-grow: 1; min-height: 280px; box-sizing: border-box; padding: 48px 24px 32px; display: flex; flex-direction: column; align-items: center; gap: 22px; background: #0C1540; color: #C9D0EA; text-align: center">
-<img src="imagenes/escudo.png" alt="El Castillo del Pollo" style="width: 140px; height: 141px; object-fit: contain">
-<span style="font-family: 'Grenze Gotisch', Georgia, serif; font-weight: 800; font-size: 26px; color: #F4C21C">Larga vida al rey</span>
-<!-- Logos de producción y auspicio. Para el de Red Bull: guardar el logo oficial (PNG, versión clara para fondo oscuro) como imagenes/logo-redbull.png -->
-<div style="display: flex; align-items: center; gap: 20px">
-<img src="imagenes/logo-cooking.png" alt="Cooking Media" style="height: 30px; width: auto">
-<span style="width: 1px; height: 30px; background: #3A4A8C"></span>
-<img src="imagenes/logo-redbull.png" alt="Red Bull" style="height: 38px; width: auto" onerror="this.outerHTML='&lt;span style=&quot;display:inline-flex;align-items:center;justify-content:center;height:38px;padding:0 14px;border:2px dashed #6B7AB8;border-radius:4px;color:#C9D0EA;font-size:12px;font-weight:700;letter-spacing:1.5px&quot;&gt;LOGO RED BULL&lt;/span&gt;'">
-</div>
-<span style="font-size: 13px; padding-top: 18px; border-top: 1px solid #25336F; width: 100%">© 2026 El Castillo del Pollo</span>
-</footer>
-
-</div>
-</div>
 <script src="script.js"></script>
 </body>
 </html>
