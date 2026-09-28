@@ -8,7 +8,6 @@ CONTENIDO DE LA CARPETA
 - google-apps-script.gs  código para recibir el casting en Google Sheets
 - imagenes/ ......... logo, escudo, fotos y cursor del pollo
 
-Todos los archivos deben subirse juntos, respetando la carpeta "imagenes".
 
 
 1. CÓMO SUBIR LA PÁGINA A GODADDY (Web Hosting con cPanel)
@@ -21,14 +20,11 @@ Todos los archivos deben subirse juntos, respetando la carpeta "imagenes".
 5. Si ya existía un index.html, reemplazarlo.
 6. Abrir el dominio en el navegador para comprobar.
 
-Nota: el "Creador de sitios web" (Website Builder) de GoDaddy NO permite
-subir esta página. Se necesita un plan de Web Hosting.
 
 
 2. CÓMO EDITAR TEXTOS
 ---------------------
-1. Abrir index.html con un editor de código (recomendado: Visual Studio Code,
-   gratis) o con el editor de cPanel (clic derecho > Editar).
+1. Abrir index.html con un editor de código o con el editor de cPanel (clic derecho > Editar).
 2. Buscar el texto con Ctrl+F (Cmd+F en Mac).
 3. La página tiene DOS versiones: ESCRITORIO y MÓVIL. Cada texto aparece
    dos veces y hay que cambiarlo en ambas. Están marcadas con comentarios:
@@ -55,7 +51,6 @@ Reemplazar el archivo dentro de /imagenes usando EXACTAMENTE el mismo nombre:
                           el logo oficial en PNG, versión clara para fondo oscuro.
                           Mientras no exista, se muestra un recuadro "LOGO RED BULL".
 - cursor-corona.png ...... puntero del mouse (corona)
-Se recomienda PNG con fondo transparente para los logos.
 
 
 4. FORMULARIO DE CASTING
