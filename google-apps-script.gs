@@ -1,7 +1,7 @@
 /**
  * EL CASTILLO DEL POLLO — Recepción de postulaciones del casting en Google Sheets
- * Pegar este código en: Hoja de cálculo > Extensiones > Apps Script
- * (ver instrucciones en LEEME.txt)
+ * OJO Pegar este código en: Hoja de cálculo > Extensiones > Apps Script
+ * (Deje instrucciones en LEEME.txt)
  */
 
 // Correo que recibe un aviso por cada postulación (dejar "" para no enviar)
