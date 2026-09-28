@@ -1,9 +1,8 @@
 /* =========================================================
-   FORMULARIO DE CASTING
+   OJO FORMULARIO DE CASTING
    Pega aquí abajo, entre las comillas, UNA de estas URL:
    - Google Sheets: la URL de la "Aplicación web" de Apps Script
      (https://script.google.com/macros/s/.../exec). Ver LEEME.txt.
-   - Formspree: https://formspree.io/f/xxxxxxx
    ========================================================= */
 var FORM_ENDPOINT = "";
 
