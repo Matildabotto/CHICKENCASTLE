@@ -1,0 +1,94 @@
+EL CASTILLO DEL POLLO — SITIO WEB
+=======================
+
+CONTENIDO DE LA CARPETA
+- index.html ........ la página (todos los textos están aquí)
+- estilos.css ....... estilos, animaciones y cursor
+- script.js ......... efectos, menú móvil y formulario de casting
+- google-apps-script.gs  código para recibir el casting en Google Sheets
+- imagenes/ ......... logo, escudo, fotos y cursor del pollo
+
+Todos los archivos deben subirse juntos, respetando la carpeta "imagenes".
+
+
+1. CÓMO SUBIR LA PÁGINA A GODADDY (Web Hosting con cPanel)
+----------------------------------------------------------
+1. Entrar a godaddy.com > Mis productos > Web Hosting > Administrar.
+2. Abrir cPanel > Administrador de archivos.
+3. Entrar a la carpeta public_html.
+4. Subir: index.html, estilos.css, script.js y la carpeta imagenes
+   (se puede subir el ZIP y usar "Extraer" dentro de public_html).
+5. Si ya existía un index.html, reemplazarlo.
+6. Abrir el dominio en el navegador para comprobar.
+
+Nota: el "Creador de sitios web" (Website Builder) de GoDaddy NO permite
+subir esta página. Se necesita un plan de Web Hosting.
+
+
+2. CÓMO EDITAR TEXTOS
+---------------------
+1. Abrir index.html con un editor de código (recomendado: Visual Studio Code,
+   gratis) o con el editor de cPanel (clic derecho > Editar).
+2. Buscar el texto con Ctrl+F (Cmd+F en Mac).
+3. La página tiene DOS versiones: ESCRITORIO y MÓVIL. Cada texto aparece
+   dos veces y hay que cambiarlo en ambas. Están marcadas con comentarios:
+   <!-- ===== EL SHOW · versión ESCRITORIO ===== -->
+4. Cambiar solo el texto visible. No borrar los símbolos < > ni lo que está
+   dentro de style="...".
+5. Guardar y volver a subir el archivo (o guardar directo en cPanel).
+
+Textos pendientes de completar (buscar entre corchetes):
+[FECHA]  [CANAL / PLATAFORMA]  [DÍAS Y HORA]  [PREMIO]
+[NOMBRE DEL CONDUCTOR]  [NOMBRE DEL JUEGO B]  [DESCRIPCIÓN DEL JUEGO B]
+[FECHA DE CIERRE]  [@USUARIO]
+
+
+3. CÓMO CAMBIAR IMÁGENES
+------------------------
+Reemplazar el archivo dentro de /imagenes usando EXACTAMENTE el mismo nombre:
+- escudo.png ............ escudo principal (portada y pie de página)
+- logo-horizontal.png ... logo del menú superior
+- castillo.png .......... foto de la sección "El Show"
+- rey.png ............... ilustración de la sección "El Rey"
+- logo-cooking.png ...... logo Cooking Media (pie de página)
+- logo-redbull.png ...... logo Red Bull (pie de página) — AGREGAR: guardar aquí
+                          el logo oficial en PNG, versión clara para fondo oscuro.
+                          Mientras no exista, se muestra un recuadro "LOGO RED BULL".
+- cursor-corona.png ...... puntero del mouse (corona)
+Se recomienda PNG con fondo transparente para los logos.
+
+
+4. FORMULARIO DE CASTING
+------------------------
+Las postulaciones pueden llegar a una planilla de Google Sheets (opción A)
+o a Formspree (opción B). Solo se necesita una.
+
+OPCIÓN A — GOOGLE SHEETS (recomendada si la empresa usa Google)
+1. Crear una hoja de cálculo nueva en Google Drive (ej: "Casting El Castillo del Pollo").
+2. En la hoja: Extensiones > Apps Script.
+3. Borrar lo que aparece y pegar TODO el contenido de google-apps-script.gs.
+   (Opcional: escribir un correo en CORREO_AVISO para recibir un aviso
+   por cada postulación.)
+4. Guardar (ícono de disquete).
+5. Clic en Implementar > Nueva implementación.
+   - Tipo (ícono de engranaje): Aplicación web.
+   - Ejecutar como: Yo.
+   - Quién tiene acceso: Cualquier usuario.
+6. Clic en Implementar y autorizar los permisos que pide Google
+   (si aparece "Google no verificó esta app": Configuración avanzada >
+   Ir a ... (no seguro). Es normal porque el script es propio).
+7. Copiar la "URL de la aplicación web" (termina en /exec).
+8. Abrir script.js y pegarla en:  var FORM_ENDPOINT = "";
+9. Subir script.js actualizado a GoDaddy.
+10. Hacer una postulación de prueba y revisar que aparezca en la hoja.
+
+Si más adelante se modifica el código de Apps Script, hay que ir a
+Implementar > Administrar implementaciones > Editar > Nueva versión.
+
+OPCIÓN B — FORMSPREE
+1. Crear una cuenta gratis en https://formspree.io y un nuevo formulario.
+2. Copiar la URL que entrega (ej: https://formspree.io/f/abcdwxyz).
+3. Pegarla en script.js en:  var FORM_ENDPOINT = "";
+4. Subir script.js actualizado.
+
+Mientras no se configure ninguna, el formulario mostrará un mensaje de error.
